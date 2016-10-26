@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RACProgressSubject_Example' do
+  pod 'RACProgressSubject', :path => '../'
+
+  target 'RACProgressSubject_Tests' do
+    inherit! :search_paths
+
+    pod 'Kiwi'
+  end
+end
