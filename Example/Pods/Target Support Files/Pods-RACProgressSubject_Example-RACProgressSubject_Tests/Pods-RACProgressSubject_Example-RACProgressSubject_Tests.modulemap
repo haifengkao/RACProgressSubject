@@ -1,0 +1,6 @@
+framework module Pods_RACProgressSubject_Example_RACProgressSubject_Tests {
+  umbrella header "Pods-RACProgressSubject_Example-RACProgressSubject_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

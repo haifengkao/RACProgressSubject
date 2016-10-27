@@ -1,0 +1,28 @@
+PODS:
+  - Kiwi (2.4.0)
+  - RACProgressSubject (0.1.0):
+    - ReactiveCocoa (~> 2.0)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+
+DEPENDENCIES:
+  - Kiwi
+  - RACProgressSubject (from `../`)
+
+EXTERNAL SOURCES:
+  RACProgressSubject:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
+  RACProgressSubject: 005bc956a95de489f4d413aa3b9e3b055297b86e
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+
+PODFILE CHECKSUM: 5925f564ed4591008f352a479d31e89d227ee11d
+
+COCOAPODS: 1.0.1

@@ -1,0 +1,6 @@
+framework module RACProgressSubject {
+  umbrella header "RACProgressSubject-umbrella.h"
+
+  export *
+  module * { export * }
+}
