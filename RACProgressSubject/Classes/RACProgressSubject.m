@@ -21,6 +21,11 @@
 
 @implementation RACProgressSubject
 
+- (instancetype)init
+{
+    return [self initWithProgresses:nil];
+}
+
 - (instancetype)initWithProgresses:(NSArray*)theProgresses
 {
     if (self = [super init]) {
