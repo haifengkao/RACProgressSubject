@@ -22,7 +22,6 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		8DDF017860C64DF6626A07C5 /* Pods_RACProgressSubject_Example_RACProgressSubject_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5AEEB5F29D8D0C78CC5205 /* Pods_RACProgressSubject_Example_RACProgressSubject_Tests.framework */; };
 		F5801E919D2C24B536394803 /* Pods_RACProgressSubject_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF4D9A70321FEC6BCDA9AC0 /* Pods_RACProgressSubject_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,7 +65,6 @@
 		A291712542C68A14B1879A08 /* Pods-RACProgressSubject_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACProgressSubject_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RACProgressSubject_Tests/Pods-RACProgressSubject_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A61B2E3F2BC7A6B09FFC7BF9 /* Pods-RACProgressSubject_Example-RACProgressSubject_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACProgressSubject_Example-RACProgressSubject_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RACProgressSubject_Example-RACProgressSubject_Tests/Pods-RACProgressSubject_Example-RACProgressSubject_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B27E3E00C34FE124FE0BB936 /* Pods_RACProgressSubject_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RACProgressSubject_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD5AEEB5F29D8D0C78CC5205 /* Pods_RACProgressSubject_Example_RACProgressSubject_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RACProgressSubject_Example_RACProgressSubject_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC557BA45E919B54C4268C4C /* RACProgressSubject.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RACProgressSubject.podspec; path = ../RACProgressSubject.podspec; sourceTree = "<group>"; };
 		E1A9FE82D137CA8A16DCED8D /* Pods-RACProgressSubject_Example-RACProgressSubject_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACProgressSubject_Example-RACProgressSubject_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RACProgressSubject_Example-RACProgressSubject_Tests/Pods-RACProgressSubject_Example-RACProgressSubject_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,7 +89,6 @@
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
 				F5801E919D2C24B536394803 /* Pods_RACProgressSubject_Tests.framework in Frameworks */,
-				8DDF017860C64DF6626A07C5 /* Pods_RACProgressSubject_Example_RACProgressSubject_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,7 +125,6 @@
 				6003F5AF195388D20070C39A /* XCTest.framework */,
 				B27E3E00C34FE124FE0BB936 /* Pods_RACProgressSubject_Example.framework */,
 				2FF4D9A70321FEC6BCDA9AC0 /* Pods_RACProgressSubject_Tests.framework */,
-				BD5AEEB5F29D8D0C78CC5205 /* Pods_RACProgressSubject_Example_RACProgressSubject_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
