@@ -358,7 +358,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RACProgressSubject_Example-RACProgressSubject_Tests/Pods-RACProgressSubject_Example-RACProgressSubject_Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RACProgressSubject_Tests/Pods-RACProgressSubject_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7F87785FB78163352BEBADFA /* [CP] Copy Pods Resources */ = {
@@ -373,7 +373,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RACProgressSubject_Example-RACProgressSubject_Tests/Pods-RACProgressSubject_Example-RACProgressSubject_Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RACProgressSubject_Tests/Pods-RACProgressSubject_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A82C6C69311483E333901F44 /* [CP] Embed Pods Frameworks */ = {
@@ -549,9 +549,8 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1A9FE82D137CA8A16DCED8D /* Pods-RACProgressSubject_Example-RACProgressSubject_Tests.debug.xcconfig */;
+			baseConfigurationReference = A291712542C68A14B1879A08 /* Pods-RACProgressSubject_Tests.debug.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -573,9 +572,8 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A61B2E3F2BC7A6B09FFC7BF9 /* Pods-RACProgressSubject_Example-RACProgressSubject_Tests.release.xcconfig */;
+			baseConfigurationReference = 7B458734A172E392C9429A2A /* Pods-RACProgressSubject_Tests.release.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

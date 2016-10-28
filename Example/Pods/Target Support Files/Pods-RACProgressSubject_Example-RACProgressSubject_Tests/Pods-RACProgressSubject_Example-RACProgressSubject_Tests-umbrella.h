@@ -1,6 +1,0 @@
-#import <UIKit/UIKit.h>
-
-
-FOUNDATION_EXPORT double Pods_RACProgressSubject_Example_RACProgressSubject_TestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_RACProgressSubject_Example_RACProgressSubject_TestsVersionString[];
-

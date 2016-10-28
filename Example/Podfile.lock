@@ -1,6 +1,6 @@
 PODS:
   - Kiwi (2.4.0)
-  - RACProgressSubject (0.1.0):
+  - RACProgressSubject (0.5.0):
     - ReactiveCocoa (~> 2.0)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
@@ -20,9 +20,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
-  RACProgressSubject: 005bc956a95de489f4d413aa3b9e3b055297b86e
+  RACProgressSubject: 6b4761d345f8d948413eeef0af766e774a110bc4
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
 
-PODFILE CHECKSUM: 5925f564ed4591008f352a479d31e89d227ee11d
+PODFILE CHECKSUM: 2133e449ef6d3f1d922cf5e15c9a1b8b649bd651
 
 COCOAPODS: 1.0.1

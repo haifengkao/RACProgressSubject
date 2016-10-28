@@ -3,9 +3,10 @@ use_frameworks!
 target 'RACProgressSubject_Example' do
   pod 'RACProgressSubject', :path => '../'
 
-  target 'RACProgressSubject_Tests' do
-    pod 'RACProgressSubject', :path => '../'
+end
 
-    pod 'Kiwi'
-  end
+target 'RACProgressSubject_Tests' do
+  pod 'RACProgressSubject', :path => '../'
+
+  pod 'Kiwi'
 end
