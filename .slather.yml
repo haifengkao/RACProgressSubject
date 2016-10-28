@@ -1,5 +1,7 @@
 # .slather.yml
 #
+
+ci_service: travis
 coverage_service: coveralls
 xcodeproj: Example/RACProgressSubject.xcodeproj
 workspace: Example/RACProgressSubject.xcworkspace

@@ -20,4 +20,4 @@ script:
 # -c means coverall
 # -t means travis
 # -s means simple output
-after_success: slather coverage -c -s -t --verbose
+after_success: cd $TRAVIS_BUILD_DIR && slather
