@@ -82,16 +82,5 @@
         ++self.currentIndex;
     }
 }
-
-- (void)sendCompleted {
-    // don't send completion
-    // progressSubject will complete itself when the all progress signals are finished
-}
-
-- (void)sendError:(NSError *)e {
-    // don't send error
-    // progressSubject should not send errors (cannot be displayed anyway)
-}
-
 @end
 
