@@ -1,6 +1,6 @@
 {
   "name": "RACProgressSubject",
-  "version": "0.5.0",
+  "version": "0.12.0",
   "summary": "RACProgressSubject provides an easy way to handle multiple progress signals",
   "description": "The objective is to handle the scenarios which involes mutiple progress signals. \nFor example, when a user wants to login, the app needs to post the login information to the server\nand download the user infos. In order to display an accurate login progress, we need to handle the\nprogress of both http post and http get operations. \nRACProgressSubject can merge the multiple progress signals into single signal.",
   "homepage": "https://github.com/haifengkao/RACProgressSubject",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/haifengkao/RACProgressSubject.git",
-    "tag": "0.5.0"
+    "tag": "0.12.0"
   },
   "platforms": {
     "ios": "8.0"
