@@ -2,4 +2,14 @@
 #
 coverage_service: coveralls
 xcodeproj: Example/RACProgressSubject.xcodeproj
-source_directory: Pod/Classes
+workspace: Example/RACProgressSubject.xcworkspace
+scheme: RACProgressSubject-Example
+
+# cocoapods 1.0 changes the Pod/Classes to RACProgressSubject/classes
+source_directory: RACProgressSubject/Classes
+
+# for slather to choose the correct source code %
+binary_basename: RACProgressSubject
+
+# single command for debugging
+# slather coverage -s --workspace Example/RACProgressSubject.xcworkspace --scheme RACProgressSubject-Example --binary-basename RACProgressSubject

@@ -551,6 +551,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A291712542C68A14B1879A08 /* Pods-RACProgressSubject_Tests.debug.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -574,6 +575,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7B458734A172E392C9429A2A /* Pods-RACProgressSubject_Tests.release.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
