@@ -10,7 +10,8 @@ cache:
 
 install:
   - bundle install
-  - bundle exec pod repo update --silent
+  # too slow
+  #- bundle exec pod repo update --silent
   - bundle exec pod install --project-directory=Example
 
 script:
