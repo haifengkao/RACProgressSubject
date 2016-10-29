@@ -8,10 +8,8 @@ cache:
   - bundler
   - cocoapods
 
-before_install: rvm use $RVM_RUBY_VERSION
-
 install:
-  - bundle install --without=documentation --path ../travis_bundle_dir
+  - bundle install
   # too slow
   #- bundle exec pod repo update --silent
   - bundle exec pod install --project-directory=Example
@@ -22,4 +20,5 @@ script:
 # -c means coverall
 # -t means travis
 # -s means simple output
-after_success: cd $TRAVIS_BUILD_DIR && slather
+after_success: 
+  - bash <(curl -s https://codecov.io/bash)
