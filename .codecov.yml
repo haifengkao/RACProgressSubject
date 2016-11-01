@@ -2,9 +2,5 @@ codecov:
   branch: master
 
 coverage:
-  precision: 2
-  round: down
-  range: "70...100"
-
   ignore:               # files and folders that will be removed during processing
     - "Example/*"
