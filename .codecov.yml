@@ -1,3 +1,11 @@
 codecov:
-  ignore:          # files and folders that will be removed during processing
+  branch: master
+  bot: null
+
+coverage:
+  precision: 2
+  round: down
+  range: "70...100"
+
+  ignore:               # files and folders that will be removed during processing
     - "Example/*"
