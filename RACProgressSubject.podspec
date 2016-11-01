@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RACProgressSubject'
-  s.version          = '0.18.0'
+  s.version          = '0.19.0'
   s.summary          = 'RACProgressSubject provides an easy way to handle multiple progress signals'
 
 # This description is used to generate tags and improve search results.
