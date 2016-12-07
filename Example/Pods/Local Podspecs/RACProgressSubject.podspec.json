@@ -20,7 +20,7 @@
   },
   "source_files": "RACProgressSubject/Classes/**/*",
   "dependencies": {
-    "ReactiveCocoa": [
+    "ReactiveObjC": [
       "~> 2.0"
     ]
   }

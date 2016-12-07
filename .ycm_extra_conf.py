@@ -27,24 +27,25 @@ def findProjectName(working_directory):
 flags = [
 # TODO: find the correct cache path automatically
 '-D__IPHONE_OS_VERSION_MIN_REQUIRED=80000',
-'-mios-simulator-version-min=8.0',
-'-arch i386',
+'-miphoneos-version-min=9.3',
+'-arch', 'arm64',
 '-fblocks',
-'-fobjc-runtime=ios-8.0.0',
-# '-fmodules',
+'-fmodules',
 '-fobjc-arc',
 '-fobjc-exceptions',
 '-fexceptions',
 '-isystem',
 '/Library/Developer/CommandLineTools/usr/include/c++/v1', # for c++ headers <string>, <iostream> definition
 '-x',
-'objective-c++',
-'-F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks',
-'-F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks',
-'-I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/Foundation.framework/Headers',
-'-I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include',
-'-isystem', '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1'
-'-I/Library/Developer/CommandLineTools/usr/include',
+'objective-c',
+'-Wno-#pragma-messages',
+'-Wno-#warnings',
+# '-F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks',
+# '-F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks',
+# '-I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/Foundation.framework/Headers',
+# '-I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include',
+# '-isystem', '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1'
+# '-I/Library/Developer/CommandLineTools/usr/include',
 #custom definition, include subfolders
 '-ProductFrameworkInclude', # include the framework in the products(in derivedData) folder
 '-I./Example/'+findProjectName(DirectoryOfThisScript()), # new cocoapods directory
@@ -55,8 +56,7 @@ flags = [
 # '-F/Users/Lono/Library/Developer/Xcode/DerivedData/Scrapio-dliwlpgcvwijijcdxarawwtrfuuh/Build/Products/Debug-iphonesimulator/Kiwi/',
 # '-include',
 # './Example/Tests/Tests-Prefix.pch', # test project prefix header
-'-isysroot',
-'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk',
+'-isysroot', '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk'
 # '-fencode-extended-block-signature',  #libclang may report error on this
 
 # '-I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/7.0.2/include', # let IncludeClangInXCToolChain handle it
@@ -261,17 +261,6 @@ def GetCompilationInfoForFile( filename ):
 
 import time
 def FlagsForFile( filename, **kwargs ):
-  # update .clang for chromatica every 5min TODO: very dirty
-
-  chromatica_file = DirectoryOfThisScript() + '/.clang'
-
-  if (not os.path.exists(chromatica_file)) or (time.time() - os.stat(chromatica_file).st_mtime > 5*60):
-    parsed_flags = IncludeFlagsOfSubdirectory( flags, DirectoryOfThisScript() )
-    escaped = [flag for flag in parsed_flags if " " not in flag] # chromatica doesn't handle space in flag
-    f = open(chromatica_file, 'w') # truncate the current file
-    f.write('flags='+' '.join(escaped))
-    f.close()
-
   if database:
     # Bear in mind that compilation_info.compiler_flags_ does NOT return a
     # python list, but a "list-like" StringVec object
@@ -293,6 +282,16 @@ def FlagsForFile( filename, **kwargs ):
   else:
     relative_to = DirectoryOfThisScript()
     final_flags = MakeRelativePathsInFlagsAbsolute( flags, relative_to )
+
+  # update .clang for chromatica every 5min TODO: very dirty
+  chromatica_file = DirectoryOfThisScript() + '/.clang'
+
+  if (not os.path.exists(chromatica_file)) or (time.time() - os.stat(chromatica_file).st_mtime > 5*60):
+    parsed_flags = IncludeFlagsOfSubdirectory( final_flags, DirectoryOfThisScript() )
+    escaped = [flag for flag in parsed_flags if " " not in flag] # chromatica doesn't handle space in flag
+    f = open(chromatica_file, 'w') # truncate the current file
+    f.write('flags='+' '.join(escaped))
+    f.close()
 
   return {
     'flags': final_flags,

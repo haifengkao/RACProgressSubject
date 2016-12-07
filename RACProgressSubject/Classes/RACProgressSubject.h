@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@import ReactiveCocoa;
+@import ReactiveObjC;
 @interface RACProgressSubject : RACSubject
 
 - (instancetype)initWithProgresses:(NSArray*)theProgresses NS_DESIGNATED_INITIALIZER;
