@@ -1,6 +1,6 @@
 PODS:
   - Kiwi (2.4.0)
-  - RACProgressSubject (0.21.0):
+  - RACProgressSubject (0.22.0):
     - ReactiveObjC (~> 2.0)
   - ReactiveObjC (2.1.0)
 
@@ -14,7 +14,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
-  RACProgressSubject: 28ff58d4726d63672bb5e93c551f90f18480b1af
+  RACProgressSubject: 3302992cb3b3522b8dcff1dbb80b4779c962a10a
   ReactiveObjC: 2edae120982d8e6d5407503a10edcfdd87eb8639
 
 PODFILE CHECKSUM: 2133e449ef6d3f1d922cf5e15c9a1b8b649bd651
