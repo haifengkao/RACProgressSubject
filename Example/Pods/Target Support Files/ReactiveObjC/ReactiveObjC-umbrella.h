@@ -1,5 +1,13 @@
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
+#else
+#ifndef FOUNDATION_EXPORT
+#if defined(__cplusplus)
+#define FOUNDATION_EXPORT extern "C"
+#else
+#define FOUNDATION_EXPORT extern
+#endif
+#endif
 #endif
 
 #import "MKAnnotationView+RACSignalSupport.h"
@@ -24,6 +32,7 @@
 #import "NSString+RACSupport.h"
 #import "NSURLConnection+RACSupport.h"
 #import "NSUserDefaults+RACSupport.h"
+#import "RACAnnotations.h"
 #import "RACArraySequence.h"
 #import "RACBehaviorSubject.h"
 #import "RACBlockTrampoline.h"
